@@ -13,18 +13,13 @@ There are steps on how to
 The overall objective is to use the demo app(s) to explore the tasks and capabilities documented [here](https://istio.io/docs/tasks/):
 
 
-- [Traffic Management](https://istio.io/docs/tasks/traffic-management/)
-Tasks that demonstrate Istio's traffic routing features.
+- [Traffic Management](https://istio.io/docs/tasks/traffic-management/) - demonstrates Istio's traffic routing features.
 
-- [Security](https://istio.io/docs/tasks/security/)
-Demonstrates how to secure the mesh.
+- [Security](https://istio.io/docs/tasks/security/) - demonstrates how to secure the mesh.
 
-- [Policies](https://istio.io/docs/tasks/policy-enforcement/)
-Demonstrates policy enforcement features.
+- [Policies](https://istio.io/docs/tasks/policy-enforcement/) - demonstrates policy enforcement features.
 
-- [Telemetry](https://istio.io/docs/tasks/telemetry/)
-Demonstrates how to collect telemetry information from the mesh.
-
+- [Telemetry](https://istio.io/docs/tasks/telemetry/) - demonstrates how to collect telemetry information from the mesh.
 
 
 ## Pre-Requisites for Istio and Helm Dependencies
