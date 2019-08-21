@@ -33,3 +33,8 @@ https://istio.io/docs/tasks/policy-enforcement/
 Demonstrates how to collect telemetry information from the mesh.
 
 https://istio.io/docs/tasks/telemetry/
+
+If you are using Windows 10, you will need to set up [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) to install Ubuntu. 
+This is needed for setting up the Istio client. The instructions are for Linux/UNIX systems
+
+
