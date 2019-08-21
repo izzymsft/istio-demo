@@ -10,3 +10,7 @@ There are steps on how to
 - Deploy the Sample Demo App
 - Observe the Capabilities of Istio within a Kubernetes Cluster
 
+The overall objective is to use the demo app(s) to explore the tasks and capabilities documented here:
+
+https://istio.io/docs/tasks/
+
