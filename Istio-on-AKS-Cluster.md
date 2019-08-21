@@ -3,7 +3,7 @@
 ## Navigate to the Folder Istio was Downloaded To
 
 ```shell
-cd ~/OCP/istio-1.2.4
+cd ~/istio-1.2.4
 ```
 
 ## Step 0: Begin the Istio pre-installation verification check by running:
