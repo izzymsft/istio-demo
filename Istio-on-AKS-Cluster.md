@@ -79,9 +79,13 @@ istio-init-service-account  1        1s
 
 ## Step 4: Configuration Profile
 
+All the profiles and features are available here: 
+
+https://istio.io/docs/setup/kubernetes/additional-setup/config-profiles/
+
 Select a configuration profile and then install the istio chart corresponding to your chosen profile. 
 
-The default profile is recommended for production deployments:
+The default profile is recommended for production deployments, but we will choose the demo profile for our exercise:
 
 ```shell
 helm install install/kubernetes/helm/istio --name istio --namespace istio-system --values install/kubernetes/helm/istio/values-istio-demo.yaml
