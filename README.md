@@ -40,7 +40,9 @@ After you CLI installation is complete, you will need to install Kubectl (Cube C
 The version of **kubectl** used in this example is **1.15.3**
 
 ```shell
+# Install kubectl
 az aks install-cli
+
+# Verify the version
+kubectl version
 ```
-
-
