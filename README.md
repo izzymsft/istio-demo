@@ -14,8 +14,16 @@ The overall objective is to use the demo app(s) to explore the tasks and capabil
 
 
 - [Traffic Management](https://istio.io/docs/tasks/traffic-management/) - demonstrates Istio's traffic routing features.
-  - Request Routing
-  - Ingress
+  - Request Routing - This task shows you how to configure dynamic request routing to multiple versions of a microservice.
+  - Ingress - Controlling ingress traffic for an Istio service mesh.
+  - Egress - Controlling egress traffic for an Istio service mesh.
+  - Mirroring - This task demonstrates the traffic mirroring/shadowing capabilities of Istio.
+  - Traffic Shifting - Shows you how to migrate traffic from an old to new version of a service.
+  - TCP Traffic Shifting - Shows you how to migrate TCP traffic from an old to new version of a TCP service.
+  - Circuit Breaking - This task shows you how to configure circuit breaking for connections, requests, and outlier detection.
+  - Fault Injection - This task shows you how to inject faults to test the resiliency of your application.
+  - Request Timeouts - This task shows you how to setup request timeouts in Envoy using Istio.
+
 
 - [Security](https://istio.io/docs/tasks/security/) - demonstrates how to secure the mesh.
 
