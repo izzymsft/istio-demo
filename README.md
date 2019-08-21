@@ -13,5 +13,3 @@ There are steps on how to
 The overall objective is to use the demo app(s) to explore the tasks and capabilities documented here:
 
 https://istio.io/docs/tasks/
-
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
