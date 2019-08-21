@@ -107,13 +107,33 @@ kubectl port-forward -n istio-system $(kubectl get pod -n istio-system -l app=ki
 ```
 You can now reach the Kiali service mesh observability dashboard at the following URL on your client machine - http://localhost:20001/kiali/console/.
 
+### Getting a List of Services Running
 
+```shell
+kubectl get services
+
+NAME          TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)    AGE
+details       ClusterIP   10.0.51.8      <none>        9080/TCP   10h
+kubernetes    ClusterIP   10.0.0.1       <none>        443/TCP    42h
+productpage   ClusterIP   10.0.49.237    <none>        9080/TCP   10h
+ratings       ClusterIP   10.0.254.35    <none>        9080/TCP   10h
+reviews       ClusterIP   10.0.165.242   <none>        9080/TCP   10h
+```
 ### Getting Inside the Pods to Create Traffic Activity
 
 ```shell
+
+# Get a list of all the pods currently active
+kubectl get pods
+
+# Get the pod name for the ratings app
 kubectl get pod -l app=ratings -o jsonpath='{.items[0].metadata.name}'
 
-kubectl exec -it {Pod-Name} -- /bin/bash
+# Get Inside the Pod
+kubectl exec -it $(kubectl get pod -l app=ratings -o jsonpath='{.items[0].metadata.name}') -c ratings -- /bin/bash
 
-kubectl exec -it ratings-v1-f745cf57b-smc85 -- /bin/bash
+# Make a curl Request to the product-page microservice
+curl productpage:9080/productpage | grep -o "<title>.*</title>"
+
 ```
+
