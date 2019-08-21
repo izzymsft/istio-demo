@@ -10,29 +10,22 @@ There are steps on how to
 - [Deploy the Sample Demo App](Deploy-Sample-App-Istio.md)
 - [Observe the Capabilities of Istio within a Kubernetes Cluster](Deploy-Sample-App-Istio.md#accessing-supplementary-tools-and-add-ons)
 
-The overall objective is to use the demo app(s) to explore the tasks and capabilities documented here:
+The overall objective is to use the demo app(s) to explore the tasks and capabilities documented [here](https://istio.io/docs/tasks/):
 
-https://istio.io/docs/tasks/
 
-## Traffic Management
+- [Traffic Management[(https://istio.io/docs/tasks/traffic-management/)
 Tasks that demonstrate Istio's traffic routing features.
 
-https://istio.io/docs/tasks/traffic-management/
-
-## Security
+- [Security](https://istio.io/docs/tasks/security/)
 Demonstrates how to secure the mesh.
 
-https://istio.io/docs/tasks/security/
-
-## Policies
+- [Policies[(https://istio.io/docs/tasks/policy-enforcement/)
 Demonstrates policy enforcement features.
 
-https://istio.io/docs/tasks/policy-enforcement/
-
-## Telemetry
+- [Telemetry](https://istio.io/docs/tasks/telemetry/)
 Demonstrates how to collect telemetry information from the mesh.
 
-https://istio.io/docs/tasks/telemetry/
+
 
 ## Pre-Requisites for Istio and Helm Dependencies
 If you are using Windows 10, you will need to set up [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) to install [Ubuntu 16.04 LTS](https://www.microsoft.com/store/apps/9pjn388hp8c9). 
