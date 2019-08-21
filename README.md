@@ -14,18 +14,22 @@ The overall objective is to use the demo app(s) to explore the tasks and capabil
 
 https://istio.io/docs/tasks/
 
-Traffic Management
+## Traffic Management
 Tasks that demonstrate Istio's traffic routing features.
+
 https://istio.io/docs/tasks/traffic-management/
 
-Security
+## Security
 Demonstrates how to secure the mesh.
+
 https://istio.io/docs/tasks/security/
 
-Policies
+## Policies
 Demonstrates policy enforcement features.
+
 https://istio.io/docs/tasks/policy-enforcement/
 
-Telemetry
+## Telemetry
 Demonstrates how to collect telemetry information from the mesh.
+
 https://istio.io/docs/tasks/telemetry/
