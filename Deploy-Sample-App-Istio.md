@@ -48,3 +48,10 @@ $ kubectl get pods
 ```
 
 
+## Accessing Grafana
+The analytics and monitoring dashboards for Istio are provided by Grafana. Forward the local port 3000 on your client machine to port 3000 on the pod that is running Grafana in your AKS cluster:
+
+```shell
+kubectl -n istio-system port-forward $(kubectl -n istio-system get pod -l app=grafana -o jsonpath='{.items[0].metadata.name}') 3000:3000
+```
+
