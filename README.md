@@ -13,3 +13,19 @@ There are steps on how to
 The overall objective is to use the demo app(s) to explore the tasks and capabilities documented here:
 
 https://istio.io/docs/tasks/
+
+Traffic Management
+Tasks that demonstrate Istio's traffic routing features.
+https://istio.io/docs/tasks/traffic-management/
+
+Security
+Demonstrates how to secure the mesh.
+https://istio.io/docs/tasks/security/
+
+Policies
+Demonstrates policy enforcement features.
+https://istio.io/docs/tasks/policy-enforcement/
+
+Telemetry
+Demonstrates how to collect telemetry information from the mesh.
+https://istio.io/docs/tasks/telemetry/
