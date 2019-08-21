@@ -56,6 +56,8 @@ This section explores the tasks and capabilities of Istio as documented [here](h
 
 ## Pre-Requisites for Istio and Helm Dependencies
 
+The instructions below assumes you are setting up WSL on a Windows 10 machine. If you are running from a Mac OS X machine or Linux machine directly, please follow the relevent steps for setting up Helm, Istio Clients and Kubectl in those respective environments.
+
 ### UNIX/Linux Environments Needed
 If you are using Windows 10, you will need to set up [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) to install [Ubuntu 16.04 LTS](https://www.microsoft.com/store/apps/9pjn388hp8c9). 
 
@@ -68,10 +70,10 @@ sudo apt-get update
 sudo apt-get uprade
 ```
 
-### Installing Azure CLI on UNIX
-When you are up-to-date, the next step is to set up the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) for interacting with Azure Resources. The version of the Azure CLI used in this example is **2.0.71**
+### Installing Azure CLI on UNIX within WSL
+Once your Ubuntu 16.04 LTS installation is up-to-date, the next step is to set up the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) within WSL for interacting with Azure Resources. The version of the Azure CLI used in this example is **2.0.71**
 
-### Installing Kubectl
+### Installing Kubectl within WSL
 After you CLI installation is complete, you will need to install Kubectl (Cube Control).
 The version of **kubectl** used in this example is **1.15.3**
 
