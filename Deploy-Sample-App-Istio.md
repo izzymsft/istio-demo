@@ -37,6 +37,24 @@ If you disabled automatic sidecar injection during installation and rely on manu
 
 $ kubectl apply -f <(istioctl kube-inject -f samples/bookinfo/platform/kube/bookinfo.yaml)
 
+You should get output similar to this:
+
+iekpo@MININT-5RPA920:~/OCP/istio-1.2.4$ kubectl apply -f <(istioctl kube-inject -f samples/bookinfo/platform/kube/bookinfo.yaml)
+service/details unchanged
+serviceaccount/bookinfo-details unchanged
+deployment.apps/details-v1 configured
+service/ratings unchanged
+serviceaccount/bookinfo-ratings unchanged
+deployment.apps/ratings-v1 configured
+service/reviews unchanged
+serviceaccount/bookinfo-reviews unchanged
+deployment.apps/reviews-v1 configured
+deployment.apps/reviews-v2 configured
+deployment.apps/reviews-v3 configured
+service/productpage unchanged
+serviceaccount/bookinfo-productpage unchanged
+deployment.apps/productpage-v1 configured
+
 ```
 
 ## Confirm all services and pods are correctly defined and running:
