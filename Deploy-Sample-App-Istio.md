@@ -129,7 +129,7 @@ kubectl get pods
 # Get the pod name for the ratings app
 kubectl get pod -l app=ratings -o jsonpath='{.items[0].metadata.name}'
 
-# Get Inside the Pod
+# Get Inside the ratings Container within the Ratings Pod
 kubectl exec -it $(kubectl get pod -l app=ratings -o jsonpath='{.items[0].metadata.name}') -c ratings -- /bin/bash
 
 # Make a curl Request to the product-page microservice
