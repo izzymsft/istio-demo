@@ -14,6 +14,8 @@ The overall objective is to use the demo app(s) to explore the tasks and capabil
 
 
 - [Traffic Management](https://istio.io/docs/tasks/traffic-management/) - demonstrates Istio's traffic routing features.
+  - Request Routing
+  - Ingress
 
 - [Security](https://istio.io/docs/tasks/security/) - demonstrates how to secure the mesh.
 
