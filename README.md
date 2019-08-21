@@ -42,14 +42,17 @@ This is needed for setting up the Istio and Helm clients. The instructions for s
 Once your WSL is up and running, you will need to do and update and then an upgrade.
 
 ```shell
-
 sudo apt-get update
 sudo apt-get uprade
-
 ```
 
-When you are up-to-date, the next step is to set up the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
+When you are up-to-date, the next step is to set up the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) for interacting with Azure Resources. The version of the Azure CLI used in this example is **1.0.71**
 
+After you CLI installation is complete, you will need to install Kubectl (Cube Control).
+The version of **kubectl** used in this example is **1.15.3**
 
+```shell
+az aks install-cli
+```
 
 
