@@ -67,11 +67,11 @@ $ kubectl get pods
 
 ## Accessing Supplementary Tools and Add-Ons
 
-Additional details are available here: https://docs.microsoft.com/en-us/azure/aks/istio-install#accessing-the-add-ons
+The instructions below are intended to be used with the demo application, in a production environment, it will be recommended to access the tools installed within the cluster via a Load Balancer service or other appropriate mechanism that is secure while making the resources still accessible to the users that need it.
 
-Below is an excerpt for Grafana, Prometheus, Jaeger and Kiali
+Additional details are available [here](https://docs.microsoft.com/en-us/azure/aks/istio-install#accessing-the-add-ons) for accessing the tools via port-forwarding. Below are excerpts for Grafana, Prometheus, Jaeger and Kiali
 
-## Accessing Grafana
+### Accessing Grafana
 The analytics and monitoring dashboards for Istio are provided by Grafana. Forward the local port 3000 on your client machine to port 3000 on the pod that is running Grafana in your AKS cluster:
 
 ```shell
@@ -81,7 +81,7 @@ kubectl -n istio-system port-forward $(kubectl -n istio-system get pod -l app=gr
 You can now reach Grafana at the following URL on your client machine - http://localhost:3000.
 
 
-## Accessing Prometheus
+### Accessing Prometheus
 Metrics for Istio are provided by Prometheus. Forward the local port 9090 on your client machine to port 9090 on the pod that is running Prometheus in your AKS cluster:
 
 ```shell
@@ -90,7 +90,7 @@ kubectl -n istio-system port-forward $(kubectl -n istio-system get pod -l app=pr
 
 You can now reach the Prometheus expression browser at the following URL on your client machine - http://localhost:9090.
 
-## Jaeger
+### Jaeger
 Tracing within Istio is provided by Jaeger. Forward the local port 16686 on your client machine to port 16686 on the pod that is running Jaeger in your AKS cluster:
 
 ```shell
@@ -99,7 +99,7 @@ kubectl port-forward -n istio-system $(kubectl get pod -n istio-system -l app=ja
 
 You can now reach the Jaeger tracing user interface at the following URL on your client machine - http://localhost:16686.
 
-## Kiali
+### Kiali
 A service mesh observability dashboard is provided by Kiali. Forward the local port 20001 on your client machine to port 20001 on the pod that is running Kiali in your AKS cluster:
 
 ```shell
@@ -108,7 +108,7 @@ kubectl port-forward -n istio-system $(kubectl get pod -n istio-system -l app=ki
 You can now reach the Kiali service mesh observability dashboard at the following URL on your client machine - http://localhost:20001/kiali/console/.
 
 
-## Getting Inside the Pods to Create Traffic Activity
+### Getting Inside the Pods to Create Traffic Activity
 
 ```shell
 kubectl get pod -l app=ratings -o jsonpath='{.items[0].metadata.name}'
