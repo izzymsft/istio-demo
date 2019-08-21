@@ -5,3 +5,11 @@ Now, we have set up our Istio profile. We are going to deploy the sample app to 
 
 https://istio.io/docs/examples/bookinfo/
 
+
+## Navigate to your Istio Installation Directory
+
+```shell
+
+cd $ISTIO_HOME
+
+```
