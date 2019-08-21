@@ -14,15 +14,15 @@ The overall objective is to use the demo app(s) to explore the tasks and capabil
 
 
 - [Traffic Management](https://istio.io/docs/tasks/traffic-management/) - demonstrates Istio's traffic routing features.
-  - **Request Routing** - This task shows you how to configure dynamic request routing to multiple versions of a microservice.
-  - **Ingress** - Controlling ingress traffic for an Istio service mesh.
-  - **Egress** - Controlling egress traffic for an Istio service mesh.
-  - **Mirroring** - This task demonstrates the traffic mirroring/shadowing capabilities of Istio.
-  - **Traffic Shifting** - Shows you how to migrate traffic from an old to new version of a service.
-  - **TCP Traffic Shifting** - Shows you how to migrate TCP traffic from an old to new version of a TCP service.
-  - **Circuit Breaking** - This task shows you how to configure circuit breaking for connections, requests, and outlier detection.
-  - **Fault Injection** - This task shows you how to inject faults to test the resiliency of your application.
-  - **Request Timeouts** - This task shows you how to setup request timeouts in Envoy using Istio.
+	- **Request Routing** - This task shows you how to configure dynamic request routing to multiple versions of a microservice.
+	- **Ingress** - Controlling ingress traffic for an Istio service mesh.
+	- **Egress** - Controlling egress traffic for an Istio service mesh.
+	- **Mirroring** - This task demonstrates the traffic mirroring/shadowing capabilities of Istio.
+	- **Traffic Shifting** - Shows you how to migrate traffic from an old to new version of a service.
+	- **TCP Traffic Shifting** - Shows you how to migrate TCP traffic from an old to new version of a TCP service.
+	- **Circuit Breaking** - This task shows you how to configure circuit breaking for connections, requests, and outlier detection.
+	- **Fault Injection** - This task shows you how to inject faults to test the resiliency of your application.
+	- **Request Timeouts** - This task shows you how to setup request timeouts in Envoy using Istio.
 
 
 - [Security](https://istio.io/docs/tasks/security/) - demonstrates how to secure the mesh.
@@ -36,12 +36,21 @@ The overall objective is to use the demo app(s) to explore the tasks and capabil
 	- **Plugging in External CA Key and Certificate** - Shows how operators can configure Citadel with existing root certificate, signing certificate and key.
 	- **Citadel Health Checking** - Shows how to enable Citadel health checking with Kubernetes.
 	- **Provisioning Identity through SDS** - Shows how to enable SDS (secret discovery service) for Istio identity provisioning.
-	- **Mutual TLS Migration* - Shows you how to incrementally migrate your Istio services to mutual TLS.
+	- **Mutual TLS Migration** - Shows you how to incrementally migrate your Istio services to mutual TLS.
 	- **Mutual TLS over HTTPS** - Shows how to enable mutual TLS on HTTPS services.
 
 - [Policies](https://istio.io/docs/tasks/policy-enforcement/) - demonstrates policy enforcement features.
+	- **Enabling Policy Enforcement** - This task shows you how to enable Istio policy enforcement.
+	- **Enabling Rate Limits** - This task shows you how to use Istio to dynamically limit the traffic to a service.
+	- **Control Headers and Routing** - Shows how to modify request headers and routing using policy adapters.
+	- **Denials and White/Black Listing** - Shows how to control access to a service using simple denials or white/black listing.
 
 - [Telemetry](https://istio.io/docs/tasks/telemetry/) - demonstrates how to collect telemetry information from the mesh.
+	- **Metrics** - Demonstrates the configuration, collection, and processing of Istio mesh metrics.
+	- **Logs** - Demonstrates the configuration, collection, and processing of Istio mesh logs.
+	- **Distributed Tracing** - This task shows you how to configure Istio-enabled applications to collect trace spans.
+	- **Visualizing Your Mesh** - This task shows you how to visualize your services within an Istio mesh.
+	- **Remotely Accessing Telemetry Addons** - This task shows you how to configure external access to the set of Istio telemetry addons.
 
 
 ## Pre-Requisites for Istio and Helm Dependencies
