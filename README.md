@@ -34,8 +34,22 @@ Demonstrates how to collect telemetry information from the mesh.
 
 https://istio.io/docs/tasks/telemetry/
 
+## Pre-Requisites for Istio and Helm Dependencies
 If you are using Windows 10, you will need to set up [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) to install [Ubuntu 16.04 LTS](https://www.microsoft.com/store/apps/9pjn388hp8c9). 
 
-This is needed for setting up the Istio client. The instructions are for Linux/UNIX systems
+This is needed for setting up the Istio and Helm clients. The instructions for setting up these tools are are geared towards Linux/UNIX systems.
+
+Once your WSL is up and running, you will need to do and update and then an upgrade.
+
+```shell
+
+sudo apt-get update
+sudo apt-get uprade
+
+```
+
+When you are up-to-date, the next step is to set up the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
+
+
 
 
