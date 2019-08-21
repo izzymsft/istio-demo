@@ -87,10 +87,23 @@ Select a configuration profile and then install the istio chart corresponding to
 
 The default profile is recommended for production deployments, but we will choose the demo profile for our exercise:
 
+Make a note of the username and password for Kiali so that you can log in to the dashboard later
+
+```shell
+
+# This should show you what the username and passwords are:
+
+cat install/kubernetes/helm/istio/charts/kiali/templates/demosecret.yaml
+
+# This will allow you to decode it:
+
+echo "YWRtaW4=" | base64 -d
+
+```
+
 ```shell
 helm install install/kubernetes/helm/istio --name istio --namespace istio-system --values install/kubernetes/helm/istio/values-istio-demo.yaml
 ```
-
 You should see an output similar to the following:
 
 ```shell 
