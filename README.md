@@ -14,18 +14,30 @@ The overall objective is to use the demo app(s) to explore the tasks and capabil
 
 
 - [Traffic Management](https://istio.io/docs/tasks/traffic-management/) - demonstrates Istio's traffic routing features.
-  - Request Routing - This task shows you how to configure dynamic request routing to multiple versions of a microservice.
-  - Ingress - Controlling ingress traffic for an Istio service mesh.
-  - Egress - Controlling egress traffic for an Istio service mesh.
-  - Mirroring - This task demonstrates the traffic mirroring/shadowing capabilities of Istio.
-  - Traffic Shifting - Shows you how to migrate traffic from an old to new version of a service.
-  - TCP Traffic Shifting - Shows you how to migrate TCP traffic from an old to new version of a TCP service.
-  - Circuit Breaking - This task shows you how to configure circuit breaking for connections, requests, and outlier detection.
-  - Fault Injection - This task shows you how to inject faults to test the resiliency of your application.
-  - Request Timeouts - This task shows you how to setup request timeouts in Envoy using Istio.
+  - **Request Routing** - This task shows you how to configure dynamic request routing to multiple versions of a microservice.
+  - **Ingress** - Controlling ingress traffic for an Istio service mesh.
+  - **Egress** - Controlling egress traffic for an Istio service mesh.
+  - **Mirroring** - This task demonstrates the traffic mirroring/shadowing capabilities of Istio.
+  - **Traffic Shifting** - Shows you how to migrate traffic from an old to new version of a service.
+  - **TCP Traffic Shifting** - Shows you how to migrate TCP traffic from an old to new version of a TCP service.
+  - **Circuit Breaking** - This task shows you how to configure circuit breaking for connections, requests, and outlier detection.
+  - **Fault Injection** - This task shows you how to inject faults to test the resiliency of your application.
+  - **Request Timeouts** - This task shows you how to setup request timeouts in Envoy using Istio.
 
 
 - [Security](https://istio.io/docs/tasks/security/) - demonstrates how to secure the mesh.
+	- **Authentication Policy** - Shows you how to use Istio authentication policy to setup mutual TLS and basic end-user authentication.
+	- **Authorization for HTTP Services** - Shows how to set up role-based access control for HTTP services.
+	- **Authorization for TCP Services** - Shows how to set up role-based access control for TCP services.	
+	- **Authorization for groups and list claims** - Tutorial on how to configure the groups-base authorization and configure the authorization of list-typed claims in Istio.
+	- **Authorization permissive mode** - Shows how to use Authorization permissive mode.
+	- **Istio Vault CA Integration** - This task shows you how to integrate a Vault Certificate Authority with Istio for mutual TLS.
+	- **Mutual TLS Deep-Dive** - Shows you how to verify and test Istio's automatic mutual TLS authentication.
+	- **Plugging in External CA Key and Certificate** - Shows how operators can configure Citadel with existing root certificate, signing certificate and key.
+	- **Citadel Health Checking** - Shows how to enable Citadel health checking with Kubernetes.
+	- **Provisioning Identity through SDS** - Shows how to enable SDS (secret discovery service) for Istio identity provisioning.
+	- **Mutual TLS Migration* - Shows you how to incrementally migrate your Istio services to mutual TLS.
+	- **Mutual TLS over HTTPS** - Shows how to enable mutual TLS on HTTPS services.
 
 - [Policies](https://istio.io/docs/tasks/policy-enforcement/) - demonstrates policy enforcement features.
 
