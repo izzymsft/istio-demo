@@ -65,6 +65,11 @@ $ kubectl get services
 $ kubectl get pods
 ```
 
+## Accessing Supplementary Tools and Add-Ons
+
+Additional details are available here: https://docs.microsoft.com/en-us/azure/aks/istio-install#accessing-the-add-ons
+
+Below is an excerpt for Grafana, Prometheus, Jaeger and Kiali
 
 ## Accessing Grafana
 The analytics and monitoring dashboards for Istio are provided by Grafana. Forward the local port 3000 on your client machine to port 3000 on the pod that is running Grafana in your AKS cluster:
