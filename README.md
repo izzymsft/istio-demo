@@ -34,7 +34,8 @@ Demonstrates how to collect telemetry information from the mesh.
 
 https://istio.io/docs/tasks/telemetry/
 
-If you are using Windows 10, you will need to set up [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) to install Ubuntu. 
+If you are using Windows 10, you will need to set up [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) to install [Ubuntu 16.04 LTS](https://www.microsoft.com/store/apps/9pjn388hp8c9). 
+
 This is needed for setting up the Istio client. The instructions are for Linux/UNIX systems
 
 
